@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+<script src="https://kit.fontawesome.com/d9b010d1ce.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<link href="stylesheets/common.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="main-nav">
+		<div class="logo">
+			<a href="/" class="nav-home">
+				<h1>
+					ScriBBler
+				</h1>
+			</a>
+			<p class="sub-heading">
+				Explore, Imagine, Create
+			</p>
+		</div>
+		<div class="controls">
+			<button class="btn btn-md btn-blue signin">
+				SignUp
+			</button>
+			<button class="btn btn-md btn-blue signup">
+				SignIn
+			</button>
+		</div>
+	</header>
+
+	<div class="container">
+     <button class="all-posts btn btn-md btn-orange" style="margin-right:.2rem;">All Posts</button>
+	  <button class="create-posts btn btn-md btn-orange">Create Posts</button>
+	</div>
+
+	<div class="modal-container hide signup-modal" id="signup-modal">
+		<div class="modal">
+			<div class="modal-header">
+				<h3>
+					Get Started
+				</h3>
+				<span class="modal-close">
+					<i class="fas fa-times"></i>
+				</span>
+			</div>
+			<hr class="modal-separator">
+			<div class="modal-body">
+				<form>
+					<div class="form-control">
+						<label>Name</label>
+						<input type="text" placeholder="Enter your Name" required/>
+					</div>
+					<div class="form-control">
+						<label>Username</label>
+						<input type="text" placeholder="Enter your Username" required/>
+					</div>
+					<div class="form-control">
+						<label>Password</label>
+						<input type="password" placeholder="Enter your Password" required/>
+					</div>
+					<div class="form-control">
+						<label>Confirm Password</label>
+						<input type="password" placeholder="Re-Enter your Password" required/>
+					</div>
+					<button class="btn btn-sm btn-green btn-fluid">
+						SignUp
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal-container hide signin-modal" id="signin-modal">
+		<div class="modal">
+			<div class="modal-header">
+				<h3>
+					Welcome back!
+				</h3>
+				<span class="modal-close">
+					<i class="fas fa-times"></i>
+				</span>
+			</div>
+			<hr class="modal-separator">
+			<div class="modal-body">
+				<form>
+					<div class="form-control">
+						<label>Username</label>
+						<input type="text" placeholder="Enter your Username" required/>
+					</div>
+					<div class="form-control">
+						<label>Password</label>
+						<input type="password" placeholder="Enter your Password" required/>
+					</div>
+					<button class="btn btn-sm btn-green btn-fluid">
+						SignIn
+					</button>
+					<p class="not-member">
+						Not a member?
+						<a href="#" class="signup-link">SignUp</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal-container hide create-post-modal" id="create-post-modal">
+		<div class="modal">
+			<div class="modal-header">
+				<h3>
+					Pen your Post 
+				</h3>
+				<span class="modal-close">
+					<i class="fas fa-times"></i>
+				</span>
+			</div>
+			<hr class="modal-separator">
+			<div class="modal-body">
+				<form>
+					<div class="form-control">
+						<label>Title</label>
+						<input type="text" placeholder="Enter title of your post" required/>
+					</div>
+					<div class="form-control">
+						<label>Content</label>
+						<textarea placeholder="Enter the contents of your post" class="content-area" rows="20" style="font-size: 1rem;" required></textarea>
+					</div>
+					<div style="display: flex;justify-content: center;">
+						<button class="create-post btn btn-sm btn-green">
+							create
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="/scripts/commonFunctions.js" type="module"></script>
+	<script src="/scripts/common.js" type="module"></script>
+</body>
+</html>
